@@ -1,0 +1,7 @@
+package Lab9.ex1;
+
+public class InnFormatException extends Exception {
+    public InnFormatException(String message) {
+        super(message);
+    }
+}
