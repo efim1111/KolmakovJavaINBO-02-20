@@ -7,7 +7,7 @@ public class TestLab6 {
         System.out.println(Arrays.toString(student.IDNumber));
 
         Student[] spisok = new Student[6];
-        spisok[0]=new Student(74,"Pavel");
+        spisok[0]=new Student(74,"Pavel"); //p
         spisok[1]=new Student(90,"Sasha");
         spisok[2]=new Student(15,"Masha");
         spisok[3]=new Student(21,"Dasha");
