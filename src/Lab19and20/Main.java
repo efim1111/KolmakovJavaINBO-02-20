@@ -21,7 +21,7 @@ public class Main {
         String nomer = in.next();
         System.out.println("\n");
         long start, finish;
-        //поиск прямым перебором по ArrayList, (array.contains())
+        //ArrayList, (array.contains())
         System.out.println("Поиск прямым перебором по ArrayList, (array.contains())");
         start = System.nanoTime();
         boolean y = nomera.contains(nomer);
@@ -30,7 +30,7 @@ public class Main {
             System.out.println("Номер:"+ nomer+" найден. Время поиска: "+(finish - start) + "нс\n");
         else
             System.out.println("Номер:"+ nomer+"  НЕ найден. Время поиска: "+(finish - start) + "нс\n");
-        //Поиск бинарным поиском по сортированному ArrayList, (Collections.binarySearch())
+        //ArrayList, (Collections.binarySearch())
         System.out.println("Поиск бинарным поиском по сортированному ArrayList, (Collections.binarySearch())");
         Collections.sort(nomera);
         start = System.nanoTime();
@@ -40,7 +40,7 @@ public class Main {
             System.out.println("Номер:"+ nomer+" найден. Его позиция в базе: "+resOfBinarySearch+" Время поиска: "+(finish - start) + "нс\n");
         else
             System.out.println("Номер:"+ nomer+"  НЕ найден. Время поиска: "+(finish - start) + "нс\n");
-        //поиск в HashSet, (setHash.contains())
+        //HashSet, (setHash.contains())
         System.out.println("Поиск в HashSet, (setHash.contains())");
         start = System.nanoTime();
         y = nomeraForHash.contains(nomer);
@@ -50,7 +50,7 @@ public class Main {
         else
             System.out.println("Номер:"+ nomer+"  НЕ найден. Время поиска: "+(finish - start) + "нс\n");
 
-        //поиск в TreeSet. (setTree.contains())
+        //TreeSet. (setTree.contains())
         System.out.println("Поиск в TreeSet. (setTree.contains())");
         start = System.nanoTime();
         y = nomeraForTree.contains(nomer);
