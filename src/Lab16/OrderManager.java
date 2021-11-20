@@ -7,7 +7,7 @@ public class OrderManager {
 
     public void addOrder(String address, Order order) throws Exception {
         if (map.containsKey(address)) {
-            throw new OrderAlreadyAddedException();
+            throw new OrderAlreadyAddedException("СТОЛИК ЗАНЯТ!");
         }
         map.put(address, order);
     }

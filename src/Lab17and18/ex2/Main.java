@@ -1,15 +1,13 @@
 package Lab17and18.ex2;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Main {
-    public void main()
-    {
-        String input = "01:23:45:67:89:Az";
-        System.out.println(input);
-        boolean result = input.matches("(([0-9A-Fa-f]{2}[-:]){5}[0-9A-Fa-f]{2})|(([0-9A-Fa-f]{4}\\.){2}[0-9A-Fa-f]{4})");
-        if (result) {
-            System.out.println("Данная строка является MAC-адресом\n");
-        } else {
-            System.out.println("Данная строка НЕ является MAC-адресом\n");
-        }
+    public static void main(String[] args) {
+        Pattern p1 = Pattern.compile("([a-f]+[A-F]+:){3}+([0-9]{2}+:){2}+[0-9]{2}");
+        Matcher m1 = p1.matcher( "1E:dC:cA:56:76:54" );
+        boolean b = m1.matches();
+        System.out.println(b);
     }
 }
