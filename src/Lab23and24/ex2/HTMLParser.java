@@ -10,10 +10,10 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class HTMLParser {
-    private static String IMAGE_DESTINATION_FOLDER = "src/ru/luckoff/mirea/exercies23and24/task_2/images";
+    private static String IMAGE_DESTINATION_FOLDER = "src/Lab23and24/ex2/images";
 
     public static void main(String[] args) throws IOException {
-        new File("src/ru/luckoff/mirea/exercies23and24/task_2/images").mkdirs();
+        new File("src/Lab23and24/ex2/images").mkdirs();
 
         String strURL = "http://www.mirea.ru";
         Document document = Jsoup
